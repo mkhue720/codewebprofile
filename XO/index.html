@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe Game by NMK</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   
+</head>
+<body onkeydown="return false">
+      <!-- select box -->
+  <div class="select-box">
+    <header>Tic Tac Toe</header>
+    <div class="content">
+      <div class="title">Select which you want to be?</div>
+      <div class="options">
+        <button class="playerX">Player (X)</button>
+        <button class="playerO">Player (O)</button>
+      </div>
+      <div class="credit">Created By <a href="http://nmk2844.id.vn/" target="_blank">NMK</a></div>
+    </div>
+  </div> 
+
+  <!-- playboard section -->
+  <div class="play-board">
+    <div class="details">
+      <div class="players">
+        <span class="Xturn">X's Turn</span>
+        <span class="Oturn">O's Turn</span>
+        <div class="slider"></div>
+      </div>
+    </div>
+    <div class="play-area">
+      <section>
+        <span class="box1"></span>
+        <span class="box2"></span>
+        <span class="box3"></span>
+        <span class="box4"></span>
+        <span class="box5"></span>
+      </section>
+      <section>
+        <span class="box6"></span>
+        <span class="box7"></span>
+        <span class="box8"></span>
+        <span class="box9"></span>
+        <span class="box10"></span>
+      </section>
+      <section>
+        <span class="box11"></span>
+        <span class="box12"></span>
+        <span class="box13"></span>
+        <span class="box14"></span>
+        <span class="box15"></span>
+      </section>
+      <section>
+        <span class="box16"></span>
+        <span class="box17"></span>
+        <span class="box18"></span>
+        <span class="box19"></span>
+        <span class="box20"></span>
+      </section>
+      <section>
+        <span class="box21"></span>
+        <span class="box22"></span>
+        <span class="box23"></span>
+        <span class="box24"></span>
+        <span class="box25"></span>
+      </section>
+    </div>
+  </div>
+
+  <!-- result box -->
+  <div class="result-box">
+    <div class="won-text"></div>
+    <div class="btn"><button>Replay</button></div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="bot.js"></script>
+    <script type='text/javascript'>
+    //<![CDATA[
+    // JavaScript Document
+    var message = "NoRightClicking";
+    function defeatIE() {
+        if (document.all) {
+            (message);
+            return false;
+        }
+    }
+    function defeatNS(e) {
+        if (document.layers || (document.getElementById && !document.all)) {
+            if (e.which == 2 || e.which == 3) {
+                (message);
+                return false;
+            }
+        }
+    }
+    if (document.layers) {
+        document.captureEvents(Event.MOUSEDOWN);
+        document.onmousedown = defeatNS;
+    } else {
+        document.onmouseup = defeatNS;
+        document.oncontextmenu = defeatIE;
+    }
+    document.oncontextmenu = new Function("return false")
+        //]]>
+</script>
+<script type='text/javascript'>
+    let checkCtrl = false;
+
+    $('*').keydown(function(e) {
+        if (e.keyCode == 17) {
+            checkCtrl = true;
+        }
+    }).keyup(function(ev) {
+        if (ev.keyCode == 17) {
+            checkCtrl = false;
+        }
+    }).keydown(function(event) {
+        if (checkCtrl) {
+            if (event.keyCode == 85) {
+                return false;
+            }
+        }
+    });
+</script>
+
+</body>
+</html>

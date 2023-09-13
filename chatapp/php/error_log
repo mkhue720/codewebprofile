@@ -1,0 +1,3 @@
+[12-Sep-2023 18:03:12 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/t1692193919/public_html/chatapp/php/users.php on line 8
+[12-Sep-2023 18:03:37 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/t1692193919/public_html/chatapp/php/users.php on line 8
+[12-Sep-2023 18:03:39 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/t1692193919/public_html/chatapp/php/users.php on line 8

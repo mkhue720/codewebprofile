@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin thanh toán</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+    <div class="avatar-container">
+        <img src="https://i.imgur.com/KbCsYjr.jpg" alt="avatar">
+        <p class="avatar-name">Ngô Minh Khuê</p>
+      </div>
+      
+    <h1>Thông tin thanh toán</h1>
+    
+    <div class="row">
+        <div class="column">
+            <p class="text-gray-700">
+                <img src="./img/mbb.png" alt="MBBank Logo" width="100">
+                <br>
+                <b>MBBANK</b>
+                <br>
+                <span class="stk">
+                    <b>STK: </b>
+                    <span class="stk-value" id="wallet1">0984703325</span>
+                    <button class="copy-button" onclick="copyText('wallet1')">
+                        <i class="uil uil-copy"></i>
+                    </button>
+                </span>
+                <br>
+                <b>NGÔ MINH KHUÊ</b>
+                
+                <button id="myButton1">Thanh toán</button>
+            </p>
+        </div>
+        <div class="column">
+            <p class="text-gray-700">
+                <img src="./img/vcb.jpg" alt="VIETCOMBANK Logo" width="100">
+                <br>
+                <b>VIETCOMBANK</b>
+                <br>
+                <span class="stk">
+                    <b>STK: </b>
+                    <span class="stk-value" id="wallet2">1031955640</span>
+                    <button class="copy-button" onclick="copyText('wallet2')">
+                        <i class="uil uil-copy"></i>
+                    </button>
+                </span>
+                <br>
+                <b>NGÔ MINH KHUÊ</b>
+                <button id="myButton2">Thanh toán</button>
+            </p>
+        </div>
+        <div class="column">
+            <p class="text-gray-700">
+                <img src="./img/momo.png" alt="MOMO Logo" width="100">
+                <br>
+                <b>MOMO</b>
+                <br>
+                <span class="stk">
+                    <b>STK: </b>
+                    <span class="stk-value" id="wallet3">0984703325</span>
+                    <button class="copy-button" onclick="copyText('wallet3')">
+                        <i class="uil uil-copy"></i>
+                    </button>
+                </span>
+                <br>
+                <b>NGÔ MINH KHUÊ</b>
+                <button id="myButton3">Thanh toán</button>
+            </p>
+        </div>
+        <div class="column">
+            <p class="text-gray-700">
+                <img src="./img/vtp.png" alt="VIETTELPAY Logo" width="100">
+                <br>
+                <b>VIETTELPAY</b>
+                <br>
+                <span class="stk">
+                    <b>STK: </b>
+                    <span class="stk-value" id="wallet4">9704229245518167</span>
+                    <button class="copy-button" onclick="copyText('wallet4')">
+                        <i class="uil uil-copy"></i>
+                    </button>
+                </span>
+                <br>
+                <b>NGÔ MINH KHUÊ</b>
+                <button id="myButton4">Thanh toán</button>
+            </p>
+        </div>
+    </div>
+
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="script.js"></script>
+</body>
+</html>

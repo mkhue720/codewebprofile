@@ -4,46 +4,37 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--=============== FAVICON ===============-->
         <link rel="shortcut icon" href="https://i.imgur.com/KbCsYjr.jpg" type="image/x-icon">
         
-        <!--=============== REMIX ICONS ===============-->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
-        <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
 
         <title>Minh Khuê WEB - PROFILE</title>
     </head>
-    <body>
-        <!--=============== HEADER ===============-->
+    <body onkeydown="return false">
         <header class="profile container">
-            <!-- Theme button -->
             <i class="ri-moon-line change-theme" id="theme-button"></i>
 
             <div class="profile__container grid">
                 <div class="profile__data">
                     <div class="profile__border">
                         <div class="profile__perfil">
-                            <!-- Insert your image, according to the example size of the portfolio -->
                             <img src="https://i.imgur.com/KbCsYjr.jpg" alt="">
                         </div>
                     </div>
 
                     <h2 class="profile__name">Minh Khuê</h2>
                     <h3 class="profile__profession">Web developer</h3>
-
-                    <ul class="profile__social">
-                        <a href="https://www.facebook.com/khue004" target="_blank" class="profile__social-link">
-                            <i class="ri-facebook-fill"></i>
-                        </a>
-                        <a href="https://zalo.me/0984703325" target="_blank" class="profile__social-link">
-                            <i class="ri-question-answer-fill"></i>
-                        </a>
-                        <a href="https://github.com/mkhue720" target="_blank" class="profile__social-link">
-                            <i class="ri-github-line"></i>
-                        </a>
-                    </ul>
+                    
+                    <div class="icons">
+                        <a href="https://www.facebook.com/khue004" class="fb"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/mkhue720/" class="insta"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/mkhue720" class="git"><i class="fab fa-github"></i></a>
+                        <a href="https://www.youtube.com/@raikichannel" class="yt"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
 
                 <div class="profile__info grid">
@@ -66,21 +57,18 @@
                 </div>
 
                 <div class="profile__buttons">
-                    <!-- Insert your CV -->
                     <a href="thongtinthanhtoan" class="button">
                         Thông Tin Cá Nhân - Thanh Toán<i class="ri-bank-line"></i>
                     </a>
-                     <a href="guicrushne" class="button">
-                        Gửi Tới Cậu Nè !! <i class="ri-heart-fill"></i>
+                     <a href="chatapp" class="button">
+                        Chat cùng mọi người tại đây nè <i class="ri-heart-fill"></i>
                     </a>
 
                     <div class="profile__buttons-small">
-                        <!-- Insert a real number plus country code -->
-                        <a href="https://api.whatsapp.com/send?phone=51123456789&text=Hello, more information!" target="_blank" class="button button__small button__gray">
+                        <a href="https://zalo.me/0984703325/" target="_blank" class="button button__small button__gray">
                             <i class="ri-whatsapp-line"></i>
                         </a>
-                        <!-- Insert your brand name or profile -->
-                        <a href="https://m.me/bedimcode" target="_blank" class="button button__small button__gray">
+                        <a href="https://www.messenger.com/t/100056497152321" target="_blank" class="button button__small button__gray">
                             <i class="ri-messenger-line"></i>
                         </a>
                     </div>
@@ -88,10 +76,8 @@
             </div>
         </header>
 
-        <!--=============== MAIN ===============-->
         <main class="main">
             <section class="filters container">
-                <!--=============== FILTERS TABS ===============-->
                
                 <ul class="filters__content">
                     <button class="filters__button filter-tab-active" data-target="#projects">
@@ -114,21 +100,19 @@
                     
                 
         
-                    <!--=============== PROJECTS ===============-->
                     <div class="projects__content grid filters__active" data-content id="projects">
                         <article class="projects__card">
                          Lưu ý Mobile : Bấm vào ảnh sau đó bấm vào con mắt để được chuyển hướng sang wed
              
   
 
-                            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
                             <img src="https://i.imgur.com/KbCsYjr.jpg" alt="" class="projects__img">
 
                             <div class="projects__modal">
                                 <div>
                                     <span class="projects__subtitle">Web</span>
                                     <h3 class="projects__title">WEB CHỦ</h3>
-                                    <a href="#" class="projects__button button button__small">
+                                    <a href="https://nmk2844.id.vn/" class="projects__button button button__small">
                                         <i class="ri-eye-fill"></i>
                                     </a>
                                 </div>
@@ -138,13 +122,13 @@
                        
 
                         <article class="projects__card">
-                            <img src="assets/img/project3.jpg" alt="" class="projects__img">
+                            <img src="https://cdn-icons-png.flaticon.com/512/7477/7477790.png" alt="" class="projects__img">
 
                             <div class="projects__modal">
                                 <div>
                                     <span class="projects__subtitle">Movil</span>
-                                    <h3 class="projects__title">Fast food app</h3>
-                                    <a href="#" class="projects__button button button__small">
+                                    <h3 class="projects__title">Weather App</h3>
+                                    <a href="https://nmk2844.id.vn/weather/" class="projects__button button button__small">
                                         <i class="ri-eye-fill"></i>
                                     </a>
                                 </div>
@@ -152,13 +136,13 @@
                         </article>
 
                         <article class="projects__card">
-                            <img src="assets/img/project4.jpg" alt="" class="projects__img">
+                            <img src="https://pbs.twimg.com/profile_images/1646955748444852231/XGehZ_9v_400x400.jpg" alt="" class="projects__img">
 
                             <div class="projects__modal">
                                 <div>
                                     <span class="projects__subtitle">Movil</span>
-                                    <h3 class="projects__title">Travel app</h3>
-                                    <a href="#" class="projects__button button button__small">
+                                    <h3 class="projects__title">Web tăng tương tác</h3>
+                                    <a href="https://trumdichvu.online/" class="projects__button button button__small">
                                         <i class="ri-eye-fill"></i>
                                     </a>
                                 </div>
@@ -166,13 +150,13 @@
                         </article>
 
                         <article class="projects__card">
-                            <img src="assets/img/project5.jpg" alt="" class="projects__img">
+                            <img src="https://play-lh.googleusercontent.com/KZTO1L6r8CzWlg2InJoU_ndRAuvYiaS-35MyYdDPeeVCPNVfM9SBY2qRGjvvADmDIR8" alt="" class="projects__img">
 
                             <div class="projects__modal">
                                 <div>
-                                    <span class="projects__subtitle">Design</span>
-                                    <h3 class="projects__title">Music app design</h3>
-                                    <a href="#" class="projects__button button button__small">
+                                    <span class="projects__subtitle">Movil</span>
+                                    <h3 class="projects__title">Game Tic Tac Toe</h3>
+                                    <a href="https://nmk2844.id.vn/XO/" class="projects__button button button__small">
                                         <i class="ri-eye-fill"></i>
                                     </a>
                                 </div>
@@ -181,7 +165,6 @@
                     </div>
                 
 
-                    <!--=============== SKILLS ===============-->
                     <div class="skills__content grid" data-content id="skills">
                         <div class="skills__area">
                             <h3 class="skills__title">Xàm Thôi Chứ Biết Mọe Gì Đâu</h3>
@@ -302,7 +285,6 @@
                             </div>
                         </div>
                     </div>
-                     <!--=============== tucodethem===============-->
                      <div class="skills__content grid" data-content id="tucodethem">
                         
                          
@@ -312,17 +294,71 @@
             
         </main>
         
-        <!--=============== FOOTER ===============-->
         <footer class="footer container">
             <span class="footer__copy">
-                &#169; <a href='https://zalo.me/0984703325'> Minh Khuê </a> NO COPPY - CODE WED NÀY KHỔ LẮM
+                &#169; <a href='https://zalo.me/0984703325'> Minh Khuê </a> NO COPPY - CODE WEB NÀY KHỔ LẮM
             </span>
         </footer>
 
-        <!--=============== SCROLLREVEAL ===============-->
         <script src="assets/js/scrollreveal.min.js"></script>
 
-        <!--=============== MAIN JS ===============-->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2306401754675242"
+     crossorigin="anonymous"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C7BEC02270"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C7BEC02270');
+</script>
         <script src="assets/js/main.js"></script>
+
+        <script type='text/javascript'>
+            var message = "NoRightClicking";
+            function defeatIE() {
+                if (document.all) {
+                    (message);
+                    return false;
+                }
+            }
+            function defeatNS(e) {
+                if (document.layers || (document.getElementById && !document.all)) {
+                    if (e.which == 2 || e.which == 3) {
+                        (message);
+                        return false;
+                    }
+                }
+            }
+            if (document.layers) {
+                document.captureEvents(Event.MOUSEDOWN);
+                document.onmousedown = defeatNS;
+            } else {
+                document.onmouseup = defeatNS;
+                document.oncontextmenu = defeatIE;
+            }
+            document.oncontextmenu = new Function("return false")
+        </script>
+
+<script type='text/javascript'>
+    let checkCtrl = false;
+
+    $('*').keydown(function(e) {
+        if (e.keyCode == 17) {
+            checkCtrl = true;
+        }
+    }).keyup(function(ev) {
+        if (ev.keyCode == 17) {
+            checkCtrl = false;
+        }
+    }).keydown(function(event) {
+        if (checkCtrl) {
+            if (event.keyCode == 85) {
+                return false;
+            }
+        }
+    });
+</script>
+
     </body>
 </html>
