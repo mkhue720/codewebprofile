@@ -1,0 +1,67 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #faf8ef;
+}
+
+.game-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #bbada0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.header {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    background-color: #bbada0;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    background-color: #cdc1b4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Add more CSS for styling */
+
+/* CSS cho nút "Back" */
+#back-button-container {
+    position: fixed;
+    top: 10px; /* Điều chỉnh vị trí top theo ý muốn */
+    left: 10px; /* Điều chỉnh vị trí left theo ý muốn */
+    z-index: 1000; /* Đảm bảo nút hiển thị trên các phần tử khác */
+}
+
+#back-button {
+    display: inline-block;
+    padding: 10px 20px; /* Điều chỉnh kích thước nút theo ý muốn */
+    background-color: #007bff; /* Màu nền của nút */
+    color: #fff; /* Màu chữ trắng */
+    text-decoration: none; /* Loại bỏ gạch chân mặc định cho liên kết */
+    border-radius: 5px; /* Bo tròn góc cho nút */
+    transition: background-color 0.3s ease; /* Hiệu ứng khi di chuột qua */
+}
+
+#back-button:hover {
+    background-color: #0056b3; /* Màu nền thay đổi khi di chuột qua */
+}

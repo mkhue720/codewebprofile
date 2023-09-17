@@ -123,3 +123,24 @@ img {
   margin-top: 10px; /* Khoảng cách giữa avatar và tên */
   font-weight: bold; /* Định dạng chữ tên avatar */
 }
+
+#back-button-container {
+  position: fixed;
+  top: 10px; /* Điều chỉnh vị trí top theo ý muốn */
+  left: 10px; /* Điều chỉnh vị trí left theo ý muốn */
+  z-index: 1000; /* Đảm bảo nút hiển thị trên các phần tử khác */
+}
+
+#back-button {
+  display: inline-block;
+  padding: 10px 20px; /* Điều chỉnh kích thước nút theo ý muốn */
+  background-color: #007bff; /* Màu nền của nút */
+  color: #fff; /* Màu chữ trắng */
+  text-decoration: none; /* Loại bỏ gạch chân mặc định cho liên kết */
+  border-radius: 5px; /* Bo tròn góc cho nút */
+  transition: background-color 0.3s ease; /* Hiệu ứng khi di chuột qua */
+}
+
+#back-button:hover {
+  background-color: #0056b3; /* Màu nền thay đổi khi di chuột qua */
+}
