@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
+
 :root {
 
   --hue: 207;
   --sat: 90%;
   --lig: 61%;
   --first-color: hsl(var(--hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--hue), var(--sat), 57%); /* -4% */
+  --first-color-alt: hsl(var(--hue), var(--sat), 57%); 
   --title-color: hsl(var(--hue), 12%, 15%);
   --text-color: hsl(var(--hue), 12%, 45%);
   --text-color-light: hsl(var(--hue), 8%, 75%);
@@ -34,12 +35,14 @@
 }
 
 * {
+  font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
 body {
+  min-height: 100vh;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
@@ -124,6 +127,7 @@ body.dark-theme {
 .profile {
   position: relative;
   padding-top: 3.5rem;
+  margin-top: 37px;
 }
 
 .profile__container {
@@ -144,15 +148,25 @@ body.dark-theme {
   border-radius: 50%;
   overflow: hidden;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
+  margin: 0 auto; /* Canh giữa */
+  margin-bottom: 15px; /* Khoảng cách giữa avatar và profile__name */
+  border: 3px solid #1DA1F2;
 }
 
 .profile__perfil img {
-  width: 75px;
+  width: 100%; /* Kích thước hình ảnh avatar */
+  height: auto;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .profile__border {
+  
   border: 3.5px solid var(--first-color);
   justify-self: center;
   width: 115px;
@@ -513,12 +527,31 @@ body.dark-theme {
     margin-bottom: 1rem;
   }
   .profile__perfil {
-    width: 120px;
-    height: 120px;
+    width: 150px; /* Kích thước của avatar */
+    height: 150px; /* Kích thước của avatar */
+    background: linear-gradient(180deg, 
+                hsla(var(--hue), var(--sat), var(--lig), 1) 0%, 
+                hsla(var(--hue), var(--sat), var(--lig), .2) 100%);
+    border-radius: 50%; /* Bo tròn khung viền */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; /* Canh giữa */
+    margin-bottom: 15px; /* Khoảng cách giữa avatar và profile__name */
+    
   }
+  
   .profile__perfil img {
-    width: 90px;
+    width: 100%; /* Kích thước hình ảnh avatar */
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+  
   .profile__profession {
     margin-bottom: 1.5rem;
   }
@@ -547,4 +580,9 @@ body.dark-theme {
   .footer__copy {
     margin: 4.5rem 0 2.5rem;
   }
+}
+.facebook-verified {
+  color: #1877F2;
+  margin-right: 5px;
+  vertical-align: middle;
 }

@@ -3,30 +3,28 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <link rel="shortcut icon" href="https://i.imgur.com/KbCsYjr.jpg" type="image/x-icon">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
         <link rel="stylesheet" href="assets/css/styles.css">
+       <title>Ngô Minh Khuê</title>
+    </head>
+    <body>
+
         
 
-
-        <title>Ngô Minh Khuê</title>
-    </head>
-    <body onkeydown="return false">
         <header class="profile container">
             <i class="ri-moon-line change-theme" id="theme-button"></i>
 
             <div class="profile__container grid">
                 <div class="profile__data">
-                    <div class="profile__border">
+                 
                         <div class="profile__perfil">
-                            <img src="https://i.imgur.com/KbCsYjr.jpg" alt="">
-                        </div>
-                    </div>
-
-                    <h2 class="profile__name">Minh Khuê</h2>
+                            <img src="/avt.jpg" alt="avatar">
+                      </div>
+                       
+                      <h2 class="profile__name">Ngô Minh Khuê<span class="facebook-verified"><i class="fas fa-check-circle"></i></span></h2>
+                      
                     <h3 class="profile__profession">Web developer</h3>
                     
                     <div class="icons">
@@ -136,7 +134,7 @@
                         </article>
 
                         <article class="projects__card">
-                            <img src="https://pbs.twimg.com/profile_images/1646955748444852231/XGehZ_9v_400x400.jpg" alt="" class="projects__img">
+                            <img src="https://vi.wizcase.com/wp-content/uploads/2022/05/Facebook-Logo.png" alt="" class="projects__img">
 
                             <div class="projects__modal">
                                 <div>
@@ -187,6 +185,38 @@
                                     <span class="projects__subtitle">Movil</span>
                                     <h3 class="projects__title">2048 Game</h3>
                                     <a href="/2048" class="projects__button button button__small">
+                                        <i class="ri-eye-fill"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        
+                        </article>
+                        
+                        <article class="projects__card">
+                            <img src="https://www.techjunkie.com/wp-content/uploads/2019/12/krita.png" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Movil</span>
+                                    <h3 class="projects__title">Draw App</h3>
+                                    <a href="/draw" class="projects__button button button__small">
+                                        <i class="ri-eye-fill"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        
+                        </article>
+                        
+                        <article class="projects__card">
+                            <img src="https://ung-dung.com/images/upanh_online/upanh.png" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Movil</span>
+                                    <h3 class="projects__title">Up ảnh lấy link</h3>
+                                    <a href="/upimg" class="projects__button button button__small">
                                         <i class="ri-eye-fill"></i>
                                     </a>
                                 </div>
@@ -334,63 +364,10 @@
 
         <script src="assets/js/scrollreveal.min.js"></script>
 
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2306401754675242"
-     crossorigin="anonymous"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C7BEC02270"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-C7BEC02270');
-</script>
+        
         <script src="assets/js/main.js"></script>
 
-        <script type='text/javascript'>
-            var message = "NoRightClicking";
-            function defeatIE() {
-                if (document.all) {
-                    (message);
-                    return false;
-                }
-            }
-            function defeatNS(e) {
-                if (document.layers || (document.getElementById && !document.all)) {
-                    if (e.which == 2 || e.which == 3) {
-                        (message);
-                        return false;
-                    }
-                }
-            }
-            if (document.layers) {
-                document.captureEvents(Event.MOUSEDOWN);
-                document.onmousedown = defeatNS;
-            } else {
-                document.onmouseup = defeatNS;
-                document.oncontextmenu = defeatIE;
-            }
-            document.oncontextmenu = new Function("return false")
-        </script>
-
-<script type='text/javascript'>
-    let checkCtrl = false;
-
-    $('*').keydown(function(e) {
-        if (e.keyCode == 17) {
-            checkCtrl = true;
-        }
-    }).keyup(function(ev) {
-        if (ev.keyCode == 17) {
-            checkCtrl = false;
-        }
-    }).keydown(function(event) {
-        if (checkCtrl) {
-            if (event.keyCode == 85) {
-                return false;
-            }
-        }
-    });
-</script>
+        
 
     </body>
 </html>
