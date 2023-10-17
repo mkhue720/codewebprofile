@@ -1,46 +1,38 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">  
-    <title>Language Translator by NMK</title>
+    <meta charset="utf-8">
+    <title>Calendar JavaScript by NMK</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link rel="shortcut icon" href="https://i.imgur.com/KbCsYjr.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="script.js" defer></script>
   </head>
   <body>
     <script type='text/javascript'> ! function (e, t, a) { function n() { c( ".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}" ), o(), r() } function r() { for (var e = 0; e < d.length; e++) d[e].alpha <= 0 ? (t.body.removeChild(d[e].el), d.splice(e, 1)) : (d[e].y--, d[e].scale += .004, d[e].alpha -= .013, d[e].el.style.cssText = "left:" + d[e].x + "px;top:" + d[e].y + "px;opacity:" + d[e].alpha + ";transform:scale(" + d[e].scale + "," + d[e].scale + ") rotate(45deg);background:" + d[e].color + ";z-index:99999"); requestAnimationFrame(r) } function o() { var t = "function" == typeof e.onclick && e.onclick; e.onclick = function (e) { t && t(), i(e) } } function i(e) { var a = t.createElement("div"); a.className = "heart", d.push({ el: a, x: e.clientX - 5, y: e.clientY - 5, scale: 1, alpha: 1, color: s() }), t.body.appendChild(a) } function c(e) { var a = t.createElement("style"); a.type = "text/css"; try { a.appendChild(t.createTextNode(e)) } catch (t) { a.styleSheet.cssText = e } t.getElementsByTagName("head")[0].appendChild(a) } function s() { return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")" } var d = []; e.requestAnimationFrame = function () { return e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) { setTimeout(e, 1e3 / 60) } }(), n() }(window, document); </script>
-    <div class="container">
-      <div class="wrapper">
-        <div class="text-input">
-          <textarea spellcheck="false" class="from-text" placeholder="Enter text"></textarea>
-          <textarea spellcheck="false" readonly disabled class="to-text" placeholder="Translation"></textarea>
+    <div class="wrapper">
+      <header>
+        <p class="current-date"></p>
+        <div class="icons">
+          <span id="prev" class="material-symbols-rounded">chevron_left</span>
+          <span id="next" class="material-symbols-rounded">chevron_right</span>
         </div>
-        <ul class="controls">
-          <li class="row from">
-            <div class="icons">
-              <i id="from" class="fas fa-volume-up"></i>
-              <i id="from" class="fas fa-copy"></i>
-            </div>
-            <select></select>
-          </li>
-          <li class="exchange"><i class="fas fa-exchange-alt"></i></li>
-          <li class="row to">
-            <select></select>
-            <div class="icons">
-              <i id="to" class="fas fa-volume-up"></i>
-              <i id="to" class="fas fa-copy"></i>
-            </div>
-          </li>
+      </header>
+      <div class="calendar">
+        <ul class="weeks">
+          <li>Sun</li>
+          <li>Mon</li>
+          <li>Tue</li>
+          <li>Wed</li>
+          <li>Thu</li>
+          <li>Fri</li>
+          <li>Sat</li>
         </ul>
+        <ul class="days"></ul>
       </div>
-      <button>Translate Text</button>
     </div>
     <div id="back-button-container">
-      <a id="back-button" href="/">Back</a>
-  </div>
-    <script src="js/countries.js"></script>
-    <script src="js/script.js"></script>
-
+        <a id="back-button" href="/">Back</a>
+    </div>
   </body>
 </html>

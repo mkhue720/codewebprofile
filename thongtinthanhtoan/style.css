@@ -144,3 +144,8 @@ img {
 #back-button:hover {
   background-color: #0056b3; /* Màu nền thay đổi khi di chuột qua */
 }
+.facebook-verified {
+  color: #1877F2;
+  margin-right: 5px;
+  vertical-align: middle;
+}

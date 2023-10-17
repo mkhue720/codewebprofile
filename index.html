@@ -7,13 +7,43 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/styles.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
        <title>Ngô Minh Khuê</title>
     </head>
     <body>
-
-        
-
-        <header class="profile container">
+        <script type='text/javascript'> ! function (e, t, a) { function n() { c( ".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}" ), o(), r() } function r() { for (var e = 0; e < d.length; e++) d[e].alpha <= 0 ? (t.body.removeChild(d[e].el), d.splice(e, 1)) : (d[e].y--, d[e].scale += .004, d[e].alpha -= .013, d[e].el.style.cssText = "left:" + d[e].x + "px;top:" + d[e].y + "px;opacity:" + d[e].alpha + ";transform:scale(" + d[e].scale + "," + d[e].scale + ") rotate(45deg);background:" + d[e].color + ";z-index:99999"); requestAnimationFrame(r) } function o() { var t = "function" == typeof e.onclick && e.onclick; e.onclick = function (e) { t && t(), i(e) } } function i(e) { var a = t.createElement("div"); a.className = "heart", d.push({ el: a, x: e.clientX - 5, y: e.clientY - 5, scale: 1, alpha: 1, color: s() }), t.body.appendChild(a) } function c(e) { var a = t.createElement("style"); a.type = "text/css"; try { a.appendChild(t.createTextNode(e)) } catch (t) { a.styleSheet.cssText = e } t.getElementsByTagName("head")[0].appendChild(a) } function s() { return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")" } var d = []; e.requestAnimationFrame = function () { return e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) { setTimeout(e, 1e3 / 60) } }(), n() }(window, document); </script>
+        <nav>
+            <div class="navbar">
+              <i class='bx bx-menu'></i>
+              <div class="logo"><a href="/">NMK</a></div>
+              <div class="nav-links">
+                <div class="sidebar-logo">
+                  <span class="logo-name">NMK</span>
+                  <i class='bx bx-x' ></i>
+                </div>
+                <ul class="links">
+                  <li><a href="/">HOME</a></li>
+                  <li>
+                    <a href="https://trumdichvu.online/">Website DVFB</a>
+                  </li>
+                  <li>
+                    <a href="https://trumthecao.online/">Website Gạch Thẻ</a>
+                  </li>
+                  <li>
+                    <a href="https://nmk2844.blogspot.com/">BLOG</a>
+                  </li>
+                  <li><a href="/contact">CONTACT US</a></li>
+                </ul>
+              </div>
+              <div class="search-box">
+                <i class='bx bx-search'></i>
+                <div class="input-box">
+                  <input type="text" placeholder="Search...">
+                </div>
+              </div>
+            </div>
+          </nav>
+      <header class="profile container">
             <i class="ri-moon-line change-theme" id="theme-button"></i>
 
             <div class="profile__container grid">
@@ -178,13 +208,13 @@
                         </article>
                         
                         <article class="projects__card">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/2048_logo.png" alt="" class="projects__img">
+                            <img src="https://sonoivu.tayninh.gov.vn/uploads/news/2022_06/hinhanh/hinh-lich-cong-tac-tuan-5.jpg" alt="" class="projects__img">
 
                             <div class="projects__modal">
                                 <div>
                                     <span class="projects__subtitle">Movil</span>
-                                    <h3 class="projects__title">2048 Game</h3>
-                                    <a href="/2048" class="projects__button button button__small">
+                                    <h3 class="projects__title">Lịch</h3>
+                                    <a href="/calendar" class="projects__button button button__small">
                                         <i class="ri-eye-fill"></i>
                                     </a>
                                 </div>
@@ -229,7 +259,7 @@
 
                     <div class="skills__content grid" data-content id="skills">
                         <div class="skills__area">
-                            <h3 class="skills__title">Xàm Thôi Chứ Biết Mọe Gì Đâu</h3>
+                            <h3 class="skills__title">FrontEnd</h3>
     
                             <div class="skills__box">
                                 <div class="skills__group">
@@ -293,7 +323,7 @@
                         </div>
 
                         <div class="skills__area">
-                            <h3 class="skills__title">Để Zậy Cho Chuyển Nghiệp Thôi</h3>
+                            <h3 class="skills__title">BackEnd</h3>
     
                             <div class="skills__box">
                                 <div class="skills__group">
@@ -358,7 +388,7 @@
         
         <footer class="footer container">
             <span class="footer__copy">
-                &#169; <a href='https://zalo.me/0984703325'> Minh Khuê </a> NO COPPY - CODE WEB NÀY KHỔ LẮM
+                &#169;Copyright by <a href='https://zalo.me/0984703325'> NMK </a> 
             </span>
         </footer>
 
